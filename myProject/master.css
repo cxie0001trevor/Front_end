@@ -1,0 +1,39 @@
+
+
+body{
+  background: grey;
+  background-repeat: no-repeat;
+}
+
+/* div{
+  background-color: rgba(135, 200, 237, 1);
+  border-color: blue;
+  border-width: medium;
+  border-style: dotted;
+} */
+
+.first{
+  color: red;
+}
+
+.second{
+  color: orange;
+}
+
+#myid{
+  color: green;
+  text-decoration: line-through;
+}
+
+h3 + ul{
+  border: double 5px blue;
+}
+
+li a{
+  color: red;
+}
+
+li a[href="https://www.baidu.com"]{
+  color: darkblue;
+  border: 2px solid white;
+}

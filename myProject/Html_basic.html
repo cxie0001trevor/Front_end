@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PageTag Title</title>
+  </head>
+  <body>
+    <h1>Basic</h1>
+    <h2>1. Text</h2>
+    <p><strong>Bold text</strong></p>
+    <p><em>Italic text</em></p>
+
+    <h2>2. Lists</h2>
+    <h3>2.1 Ordered List</h3>
+    <p>Note: "li" tag defines a list item</p>
+    <ol>
+      <li>Adam</li>
+      <li>Bunny</li>
+      <li>Christ</li>
+    </ol>
+    <h3>2.2 Unordered list</h3>
+    <ul>
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
+
+    <h2>3. Divs and Spans</h2>
+    <div class="group1">
+      <p>group1 content: <span>span content</span></p>
+    </div>
+    <h2>3. Img tag</h2>
+    <img src="./Pikachu.png" alt="Pikachu" style="width:48px;height:48px;">
+    <h2>4. Clickable Link-anchor tag</h2>
+    <a href="http://www.google.com">Click me</a>
+    <a href="https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)">
+      <img src="./Pikachu.png" alt="Pikachu_links" style="width:48px;height:48px;">
+    </a>
+    <h2>4. Table</h2>
+    <table border="1">
+      <thead>
+        <th>Field1</th>
+        <th>Field2</th>
+      </thead>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+      </tr>
+    </table>
+
+    <p>
+      <table border="3">
+        <thead>
+          <th>border style 3</th>
+        </thead>
+      </table>
+    </p>
+
+    <h2>5. Form</h2>
+    <ol>
+      <li>
+        <form>
+          <h3>Normal input box</h3>
+          Email: <input type="email" name="user_email" value="example@foo.com">
+          Password: <input type="password" name="password" value="">
+          <input type="submit" name="" value="Click me!">
+        </form>
+      </li>
+      <li>
+        <form>
+          <h3>Choose Color</h3>
+          <input type="color" name="" value="red">
+        </form>
+      </li>
+      <li>
+        <form>
+          <h3>Text input box</h3>
+          <input type="text" name="" value="Type here!">
+        </form>
+      </li>
+      <li>
+        <form action="https://www.google.com" method="get">
+          <h3>Trigger Link</h3>
+          <input type="submit" name="" value="Jump to google">
+        </form>
+      </li>
+    </ol>
+
+    <h2>6. label</h2>
+    <form>
+      <label for="useremail">Enter your email:</label>
+      <input id="useremail" type="text" name="" placeholder="sample@foo.com" required>
+      <label for="username">Enter your name:</label>
+      <input id="username" type="text" name="" placeholder="John Smith">
+      <label for="userpwd">Enter password</label>
+      <input id="userpwd"type="password" name="" placeholder="pwd">
+      <input type="submit" name="" value="Submit">
+    </form>
+
+    <h2>7. Menus and Selection</h2>
+    <ul>
+      <li>
+        <h3>Radio button</h3>
+        <form method="get">
+          <label for="male">Male</label>
+          <input id='male' type="radio" name="gender" value="1">
+          <label for="female">Female</label>
+          <input id='female' type="radio" name="gender" value="0">
+          <!-- if give the name as empty string, both can be select
+          but either one can be selected when same name are given.
+          which indicates that these two selection are linked. -->
+          <input type="submit" name="" value="Submit">
+        </form>
+      </li>
+      <li>
+        <h3>Drop down list</h3>
+        <form method="get">
+          <select name="stars">
+            <option value="">Rate our service</option>
+            <option value="Beyond">Beyond</option>
+            <option value="Great">Great</option>
+            <option value="Okay">Okay</option>
+            <option value="Bad">Bad</option>
+          </select>
+          <input type="submit" name="" value="Submit">
+        </form>
+      </li>
+      <li>
+        <h3>Textarea</h3>
+        <form method="get">
+          <textarea name="feedback" rows="8" cols="80"></textarea>
+          <input type="submit" name="" value="Submit">
+        </form>
+      </li>
+    </ul>
+
+
+  </body>
+</html>
