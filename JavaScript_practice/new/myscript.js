@@ -1,22 +1,11 @@
-var depos = prompt("How much would you like to deposit?");
-var limit = 1000;
-// var retry = 0;
-// while (depos>limit){
-//   if (retry===2){
-//     alert("Excess maximum try!")
-//     depos = 0;
-//     break;
-//   }
-//   alert("Deposite should not large than the limit: 1000.")
-//   var depos = prompt("Please enter your deposit?");
-//   retry++;
-// }
-// alert("You have successful deposite "+ depos +" dollar.")
-
-
-//for loop
-
-
-
-
-console.log("Successful!");
+function addNum(num1, num2){
+  if (isNaN(Number(num1)) || isNaN(Number(num2))){
+    console.log("The arguments should be number.");
+  } else {
+    var result = Number(num1) + Number(num2);
+    console.log("The result is: " + result);
+  }
+}
+// var num1 = prompt("Give the first number:");
+// var num2 = prompt("Give the second number:");
+// addNum(num1,num2);

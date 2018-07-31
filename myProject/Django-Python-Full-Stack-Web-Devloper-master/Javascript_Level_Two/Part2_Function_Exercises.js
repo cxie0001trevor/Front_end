@@ -24,7 +24,11 @@
 // sleepIn(false, true) → true
 
 function sleepIn(weekday, vacation) {
-    //Code Goes Here
+     if (typeof(weekday) === typeof(vacation)){
+       return !weekday || vacation;
+     } else{
+       console.log("Arguements must be boolean type.")
+     }
 }
 
 
@@ -42,7 +46,11 @@ function sleepIn(weekday, vacation) {
 // monkeyTrouble(true, false) → false
 
 function monkeyTrouble(aSmile, bSmile) {
-    //Code Goes Here
+    if (aSmile === bSmile){
+      return true;
+    } else{
+      return false;
+    }
 }
 
 
@@ -59,7 +67,11 @@ function monkeyTrouble(aSmile, bSmile) {
 // stringTimes("Hi", 1) → "Hi"
 
 function stringTimes(str, n) {
-    //Code Goes Here
+    if ((typeof(str) === "string") && (typeof(n)==="number")) {
+      return str.repeat(n);
+    } else{
+      console.log("Input Error!");
+    }
 }
 
 // PROBLEM 4: LUCKY SUM
@@ -77,8 +89,13 @@ function stringTimes(str, n) {
 // luckySum(1, 13, 3) → 1
 
 function luckySum(a, b, c){
-
-  //Code Goes Here
+  var list = [a,b,c]
+  var result=0;
+  for (var i=0;i<list.length; i++) {
+    if(list[i]===13) list[i] = 0;
+    result += list[i];
+  }
+  return result;
 }
 
 // PROBLEM 5:
@@ -96,7 +113,17 @@ function luckySum(a, b, c){
 // caught_speeding(65, true) → 0
 
 function caught_speeding(speed, is_birthday){
-  //Code Goes Here
+  var limit = [60,80];
+  if (is_birthday) {
+    speed -= 5;
+  }
+  if (speed>limit[1]){
+    return 2;
+  } else if (speed <= limit[0]){
+    return 0;
+  } else{
+    return 1;
+  }
 }
 
 
@@ -114,5 +141,8 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 2, 10) → true
 
 function makeBricks(small, big, goal){
-  //Code Goes Here
+  var con1 = (goal%5 >=0);
+  var con2 = (goal%5-small <=0);
+  var con3 = (small+5*big >= goal);
+  return con1 && con2 && con3
 }
